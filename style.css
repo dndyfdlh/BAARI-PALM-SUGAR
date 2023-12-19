@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:wght@200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap');
+
+/* Font Freight Medium */
+@import url(https://db.onlinewebfonts.com/c/90fe831fa65b9632a4790c1a1732e9ab?family=FreightNeo+W03+Medium);
+
+/* Font Freight Light */
+
+@import url(https://db.onlinewebfonts.com/c/251dff4c8f7ab0a6f3258b61f6527ad5?family=FreightNeo+W03+Light);
+
+/* Font Freight Medium Italic */
+@import url(https://db.onlinewebfonts.com/c/ee4d865b795f326ff226bc0baaa2694c?family=FreightNeo+W03+Medium+Italic);
+
+/* Font Freight Medium Italic Light*/
+@import url(https://db.onlinewebfonts.com/c/01f250e37cc2465ba7178a3181078f59?family=FreightNeo+W03+Light+Italic);
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap');
+
+@font-face {
+    font-family: 'headline';
+    src:url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
+        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
+        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
+        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: sourcesanspro;
+    src: url('font/SourceSansPro-ExtraLight.otf');
+}
+
+:root{
+    /* ====Main theme colors==== */
+    --first-color : #0e2431;
+    --second-color : #42B300;
+    --third-color : #777;
+    --headline-color : #FA5246;
+
+    /* ====Hover colors==== */
+    --hover-color : #2cb67d;
+    --button-hover-color : #FFB534;
+
+    /* ====Background colors==== */
+    --body-bg-color: #fefefe;
+    --card-bg-color: #fff;
+    --modal-bg-color:#fff;
+    --bg-color:#F2F7F5;
+    --bg-transparent-color: rgba(0,0,0,0.1);
+    --transparent-color-01: rgba(0,0,0,0.1);
+    --transparent-color-02: rgba(106,89,209,0.1);
+    --line-color : #d7d7d7;
+
+    /* ====Scroll-bar colors==== */
+    --scroll-bar-color:#c5cadf;
+    --scroll-thumb-color:#70768a;
+    --scroll-thumb-hover-color: #454f6b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: var(--first-color);
+    background: var(--body-bg-color);
+    margin: 2rem 0 0 0;
+    transition: .5s ease;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* HEADER */
+header{
+    z-index: 99999;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:var(--card-bg-color);
+    box-shadow: 0 1px 6px 0 rgb(32 33 36/10% );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14%;
+
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color:var(--first-color);
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 22px;
+    transition: all .50s ease;
+    letter-spacing: 1px;
+}
+.navbar a:hover{
+    color: var(--hover-color);
+}
+
+
+/* SECTION */
+
+/* section{
+    padding: 60px 14% 70px;
+} */
+
+/* home section */
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/HOME2.jpg);
+    background-size: cover;
+    position: relativ; 
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+
+}
+
+.home-text{
+    padding-top: 150px;
+}
+
+.home-text h1{
+    font-family: headline;
+    font-size: 45px;
+    color: var(--body-bg-color);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    opacity: 90%;
+}
+
+.home-text h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: var(--body-bg-color);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 1px;
+    opacity: 90%;
+    padding-bottom: 10px;
+}
+
+.home-text .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 65px;
+}
+
+.home-text .icon a i{
+    color: var(--first-color);
+    padding: 20px;
+    font-size: 1.5em;
+    transition: all .3s ease;
+}
+.home-text .icon a i:hover{
+    color: var(--hover-color);
+}
+
+.home-text .icon a i::before{
+    background: var(--body-bg-color);
+    padding: 10px 12px;
+    border-radius: 100%;
+    z-index: -20;
+    opacity: 0.8;
+}
+
+.home-text .icon .ff i::before{
+    background: var(--body-bg-color);
+    padding: 10px 15px;
+    border-radius: 100%;
+    z-index: -20;
+    opacity: 0.8;
+}
+
+.home .scroll-down{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+} 
+
+.home .scroll-down img{
+    color: var(--body-bg-color);
+    width: 40px;
+    animation: arrow-down ease 2s infinite;
+    margin: 3px;
+}
+
+/* Know us section */
+.knowus{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    padding: 60px 6%;
+    background-color: #fff;
+}
+
+.knowus::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/bg3.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 500px;
+    opacity:1;
+}
+
+.knowus-content{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+}
+
+.knowus-command{
+    width: 62%;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.knowus-command h1{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 500;
+    font-size: 32px;
+    padding-bottom: 30px;
+
+}
+
+.knowus-command p{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.knowus-content img{
+    width: 650px;
+    border-radius: 9px;
+}
+
+.knowus-isi-content{
+    padding-left: 45px;
+}
+
+.knowus-content .text-content h2{
+    font-family: 'Crimson Pro', serif;
+    font-weight: 300;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin-bottom: 13px;
+}
+
+.knowus-content .text-content h1{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 3px;
+}
+
+.knowus-content .text-content hr{
+    width: 70px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: var(--hover-color);
+}
+
+.knowus-content .text-content p{
+    font-family: 'Source Sans 3', sans-serif;
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+}
+
+.knowus-isi-content a{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    font-family: "FreightNeo W03 Light";
+    color: var(--first-color);
+    font-size: 20px;
+    animation: arrow-left ease 2s infinite;
+    transition: all .3s ease;
+}
+
+.knowus-isi-content a:hover{
+    letter-spacing: 1px;
+    font-family: "FreightNeo W03 Medium";
+    animation: none;
+}
+
+.knowus-content .knowus-isi-content a img{
+    width: 80px;
+    height: 4px;
+    padding-right: 15px;
+}
+
+
+/* Distribution section */
+.distribution{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    padding: 60px 5% 20px;
+    background-color: #fff;
+}
+
+.distribution::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/bg2.png) ;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 400px;
+    opacity: 0.08;
+}
+
+.distribution .distribution-content{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.distribution-content .distribution-title{
+    padding-bottom: 50px;
+}
+
+.distribution-title h2{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.distribution-title h1{
+    font-family: "FreightNeo W03 Medium Italic";
+    font-weight: 500;
+    font-size: 54px;
+    margin-bottom: 5px;
+    color: var(--headline-color);
+}
+
+.distribution-content img{
+    width: 1000px;
+    height: auto;
+
+}
+
+.isi-data{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+.isi-data .data{
+    margin: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.isi-data .data p{
+    color: var(--button-hover-color);
+    place-items: center;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: "FreightNeo W03 Light Italic";
+    color: var(--headline-color);
+    margin-bottom: 20px;
+
+}
+
+.isi-data .data span.num1{
+    font-family: "FreightNeo W03 Light Italic";
+    font-size: 55px;
+}
+.isi-data .data span.num{
+    font-family: "FreightNeo W03 Light Italic";
+    font-size: 55px;
+}
+
+.data span.text{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 18px;
+}
+
+
+/* Our Product Section */
+.ourproduct{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    padding: 60px 5% 20px;
+    background-color: var(--bg-color);
+}
+
+.ourproduct::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/bg2.png), url(img/bg1.png), url(img/bg5.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom right;
+    background-size: 400px;
+    opacity: 0.08;
+}
+
+.ourproduct-title{
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.ourproduct-title h2{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.ourproduct-title h1{
+    font-family: "FreightNeo W03 Medium Italic";
+    font-weight: 500;
+    font-size: 54px;
+    margin-bottom: 5px;
+    color: var(--headline-color);
+}
+
+.product-content{
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.product-content img{
+    width: 480px;
+    height: auto;
+}
+
+.product-des .produk-des h2{
+    font-family: "FreightNeo W03 Light Italic";
+    font-size: 40px;
+    padding: 50px 0 20px;
+}
+
+.product-des .produk-des p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.product-des a{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    font-family: "FreightNeo W03 Light";
+    color: var(--first-color);
+    font-size: 22px;
+    animation: arrow-left ease 2s infinite;
+    transition: all .3s ease;
+    width: 350px;
+}
+.product-des a img{
+    width: 100px;
+    height: 5px;
+    padding-right: 15px;
+}
+
+.product-des a:hover{
+    letter-spacing: 1px;
+    font-family: "FreightNeo W03 Medium";
+    animation: none;
+}
+
+
+/* Process Sequence */
+.process{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    padding: 60px 5% 1000px;
+    background-color: #fff;
+}
+
+.process-title{
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.process-title h2{
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.process-title h1{
+    font-family: "FreightNeo W03 Medium Italic";
+    font-weight: 500;
+    font-size: 54px;
+    margin-bottom: 5px;
+    color: var(--headline-color);
+}
+
+/* process-1 */
+.process-content{
+    /* border: solid; */
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.process-des{
+    border: solid thin var(--modal-bg-color);
+    margin: 10px;
+    width: 700px;
+    position: relative;
+    left: 30%;
+}
+
+.process-content .process-des img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300px;
+}
+.box{
+    position: relative;
+    margin-top: 100px;
+    width: 500px;
+    border: gray dashed medium;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.box h2{
+    margin: 15px;
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 30px;
+}
+
+/* process-2 */
+
+.process-content-2{
+    /* border: solid; */
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.process-des-2{
+    border: solid thin var(--modal-bg-color);
+    margin: 10px;
+    width: 700px;
+    position: relative;
+    left: 4%;
+}
+
+.process-content-2 .process-des-2 img{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 300px;
+}
+.box-2{
+    position: relative;
+    margin-top: 0px;
+    width: 500px;
+    border: gray dashed medium;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.box-2 h2{
+    margin: 15px 0 3px 15px; 
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 30px;
+}
+.box-2 hr{
+    width: 25%;
+    height: 1px;
+    margin: 0 0 15px 15px;
+    border: solid 1px;
+    color: var(--scroll-thumb-color);
+}
+.box-2 p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0 0 20px 15px ;
+}
+
+/* process 3 */
+.process-content-3{
+    /* border: solid; */
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+.process-des-3{
+    border: solid thin var(--modal-bg-color);
+    margin: 10px;
+    width: 700px;
+    position: relative;
+    left: 27%;
+}
+
+.process-content-3 .process-des-3 img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 120px;
+}
+.box-3{
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    border: gray dashed medium;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.box-3 h2{
+    margin: 15px 0 3px 15px; 
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 30px;
+}
+.box-3 hr{
+    width: 25%;
+    height: 1px;
+    margin: 0 0 15px 15px;
+    border: solid 1px;
+    color: var(--scroll-thumb-color);
+}
+.box-3 p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0 0 20px 15px ;
+}
+
+
+/* process 4 */
+.process-content-4{
+    /* border: solid; */
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+.process-des-4{
+    border: solid thin var(--modal-bg-color);
+    margin: 10px;
+    width: 700px;
+    position: relative;
+    left: 4%;
+}
+
+.process-content-4 .process-des-4 img{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 300px;
+}
+.box-4{
+    position: relative;
+    margin-top: 28px;
+    width: 500px;
+    border: gray dashed medium;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.box-4 h2{
+    margin: 15px 0 3px 15px; 
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 30px;
+}
+.box-4 hr{
+    width: 25%;
+    height: 1px;
+    margin: 0 0 15px 15px;
+    border: solid 1px;
+    color: var(--scroll-thumb-color);
+}
+.box-4 p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0 0 20px 15px ;
+}
+
+
+/* process 5 */
+.process-content-5{
+    /* border: solid; */
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+.process-des-5{
+    border: solid thin var(--modal-bg-color);
+    margin: 10px;
+    width: 700px;
+    position: relative;
+    left: 35%;
+}
+
+.process-content-5 .process-des-5 img{
+    position: absolute;
+    top: 0;
+    left: 55%;
+    width: 300px;
+}
+.box-5{
+    position: relative;
+    margin-top: 90px;
+    width: 600px;
+    border: gray dashed medium;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.box-5 h2{
+    margin: 15px 0 3px 15px; 
+    font-family: "FreightNeo W03 Medium";
+    font-weight: 300;
+    font-size: 30px;
+}
+.box-5 hr{
+    width: 25%;
+    height: 1px;
+    margin: 0 0 15px 15px;
+    border: solid 1px;
+    color: var(--scroll-thumb-color);
+}
+.box-5 p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    width: 52%;
+    margin: 0 0 20px 15px ;
+}
+
+@keyframes arrow-down{
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes arrow-left{
+    0%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(8px);
+    }
+}
