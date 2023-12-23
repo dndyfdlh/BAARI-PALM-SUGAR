@@ -74,3 +74,41 @@ ScrollReveal().reveal('.product-content img', {delay:100, distance:'20px', origi
 ScrollReveal().reveal('.produk-des h2', {delay:100, distance:'20px', origin:'top'});
 ScrollReveal().reveal('.produk-des p', {delay:100, distance:'20px', origin:'bottom'});
 ScrollReveal().reveal('.produk-des a', {delay:100, distance:'20px', origin:'right'});
+
+// HOME  | Process
+ScrollReveal().reveal('.process-title h2', {delay:100, distance:'20px', origin:'bottom'});
+ScrollReveal().reveal('.process-title h1', {delay:100, distance:'20px', origin:'left'});
+
+ScrollReveal().reveal('.as-1', {delay:100, distance:'20px', origin:'right'});
+ScrollReveal().reveal('.no1', {delay:100, distance:'20px', origin:'right'});
+
+ScrollReveal().reveal('.ab-2', {delay:100, distance:'20px', origin:'left'});
+ScrollReveal().reveal('.no2', {delay:100, distance:'20px', origin:'left'});
+
+ScrollReveal().reveal('.as-3', {delay:100, distance:'20px', origin:'right'});
+ScrollReveal().reveal('.no3', {delay:100, distance:'20px', origin:'right'});
+
+ScrollReveal().reveal('.ab-4', {delay:100, distance:'20px', origin:'left'});
+ScrollReveal().reveal('.no4', {delay:100, distance:'20px', origin:'left'});
+
+ScrollReveal().reveal('.as-5', {delay:100, distance:'20px', origin:'right'});
+ScrollReveal().reveal('.no5', {delay:100, distance:'20px', origin:'right'});
+
+ScrollReveal().reveal('.ab-6', {delay:100, distance:'20px', origin:'left'});
+ScrollReveal().reveal('.no6', {delay:100, distance:'20px', origin:'left'});
+
+ScrollReveal().reveal('.as-7', {delay:100, distance:'20px', origin:'right'});
+ScrollReveal().reveal('.no7', {delay:100, distance:'20px', origin:'right'});
+
+ScrollReveal().reveal('.ab-8', {delay:100, distance:'20px', origin:'left'});
+ScrollReveal().reveal('.no8', {delay:100, distance:'20px', origin:'left'});
+
+ScrollReveal().reveal('.as-9', {delay:100, distance:'20px', origin:'right'});
+ScrollReveal().reveal('.no9', {delay:100, distance:'20px', origin:'right'});
+
+
+// Footer
+
+ScrollReveal().reveal('.footer-des', {delay:100, distance:'20px', origin:'bottom'});
+ScrollReveal().reveal('.footer-nav', {delay:100, distance:'20px', origin:'top'});
+ScrollReveal().reveal('.footer-contact', {delay:100, distance:'20px', origin:'bottom'});
