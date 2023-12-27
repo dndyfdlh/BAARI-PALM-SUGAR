@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="mainHeader">
         <a href="index.html" class="logo">
             <img src="img/LOGO.png" alt="">
         </a>
@@ -28,42 +28,56 @@
             <li><a href="product.html">Product</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+
     </header>
+
+    <!-- bahasa -->
+    <div class="custom-dropdown" id="customDropdown">
+        <div class="custom-dropdown-select">
+            <img src="img/svg/uk.svg">
+            EN
+            <i class="fa-solid fa-caret-up icon" onclick=" toggleDropdown(), rotateIcon() "></i>
+        </div>
+        <div class="custom-dropdown-options" id="dropdownOptions">
+            <div class="custom-dropdown-option" onclick="selectOption('id/home-id.html')">
+                <img src="IMG/SVG/indonesia.svg" alt="Option 1"> Indonesia
+            </div>
+        </div>
+    </div>
+
     <!-- HOME Section -->
     <section class="home" id="home">
         <div class="home-text">
             <h1>THE LEADING SUPPLIERS OF PALM SUGAR</h1>
             <h2>Supplying Across The World</h2>
             <div class="icon">
-                <a href="" class=" ff"><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-        <a href="#knowus" class="scroll-down"><img src="img/arrow down.svg" alt=""></a>
+
     </section>
 
     <!-- knowus Section -->
     <section class="knowus" id="knowus">
-        <div class="knowus-command">
+        <div class="knowus-command revealT">
             <h1>Savoring the World, Pure Palm Sugar From Indonesia</h1>
             <p>“Once we become interested in the development of the plants in our care, their development becomes
                 part of our own rhythm of life and we are invigorated by it.”</p>
         </div>
         <div class="knowus-content knw">
-            <img src="img/knowus12.png" alt="">
+            <img class="revealB" src="img/aren-11.png" alt="">
             <div class="knowus-isi-content">
                 <div class="text-content">
-                    <h1>BAARI PALM SUGAR</h1>
-                    <h2>The sugar from your hands is enough to make it sweet</h2>
-                    <hr>
-                    <p>The mineral-enriched volcanic soils in the Indonesian archipelago bestow upon us the heritage of
+                    <h1 class="revealL">BAARI PALM SUGAR</h1>
+                    <h2 class="revealL">The sugar from your hands is enough to make it sweet</h2>
+                    <hr class="revealL">
+                    <p class="revealT">The mineral-enriched volcanic soils in the Indonesian archipelago bestow upon us
+                        the heritage of
                         palm trees. These trees provide us with the bounty of the earth and the sweetness of life. Here
                         at Baari Palmm Sugar, we strive to capture these nourishments and share them with everyone so
                         that we can all achieve a better state of living without sacrificing our quality of lives.</p>
                 </div>
                 <a href="about.html">
-                    <img src="img/panah.png" alt="">
+                    <img class="revealL" src="img/panah.png" alt="">
                     KNOW MORE ABOUT US
 
                 </a>
@@ -75,21 +89,25 @@
     <section class="distribution">
         <div class="distribution-content">
             <div class="distribution-title">
-                <h2>SERVING ACROSS NATION</h2>
-                <h1>NATIONAL DISTRIBUTION</h1>
+                <h2 class="revealR">SERVING ACROSS NATION</h2>
+                <h1 class="revealL">NATIONAL DISTRIBUTION</h1>
             </div>
-            <img src="img/map.png" alt="">
+            <img class="revealB" src="img/map.png" alt="">
             <div class="isi-data">
-                <div class="data data-1">
-                    <p class="nomor"><span class="num" data-val="20">00</span>+ ha</p>
+                <div class="data revealT">
+                    <p class="nomor"><span class="num" data-val="5">0</span>+ ha</p>
+                    <span class="text">OWN PALM SUGAR LAND</span>
+                </div>
+                <div class="data revealB">
+                    <p class="nomor"><span class="num1" data-val="5000">3000</span>+ ha</p>
                     <span class="text">JOINT PLANTATION LAND</span>
                 </div>
-                <div class="data data-2">
-                    <p class="nomor"><span class="num" data-val="300">000</span>T+ tons</p>
+                <div class="data revealT">
+                    <p class="nomor"><span class="num" data-val="300">000</span>+ tons</p>
                     <span class="text">CURRENT PRODUCTION <br>CAPACITY PER MONTH</span>
                 </div>
-                <div class="data data-3">
-                    <p class="nomor"><span class="num1" data-val="4000">3000</span> tons</p>
+                <div class="data revealB">
+                    <p class="nomor"><span class="num1" data-val="4000">3000</span>+ tons</p>
                     <span class="text">CURRENT PRODUCTION <br>CAPACITY PER YEAR</span>
                 </div>
             </div>
@@ -99,20 +117,21 @@
     <!-- Our Product -->
     <section class="ourproduct">
         <div class="ourproduct-title">
-            <h2>OUR PRODUCTS</h2>
-            <h1>BETTER & HEALTHIER</h1>
+            <h2 class="revealR">OUR PRODUCTS</h2>
+            <h1 class="revealL">BETTER & HEALTHIER</h1>
         </div>
         <div class="product-display">
             <div class="product-content">
-                <img src="img/sugar syrup.png" alt="">
+                <img class="revealL" src="img/sugar syrup.png" alt="">
                 <div class="product-des">
                     <div class="produk-des">
-                        <h2>Palm Sugar Syrup</h2>
-                        <p>Naturally Gluten-free, vegan, and can be used as a one-for-one replacement of regular sugar,
+                        <h2 class="revealB">Palm Sugar Syrup</h2>
+                        <p class="revealT">Naturally Gluten-free, vegan, and can be used as a one-for-one replacement of
+                            regular sugar,
                             except it's healthier and tastier. Crafted with passion and sustainability in mind, this
                             versatile syrup adds a delightful twist to your culinary creations.</p>
                     </div>
-                    <a href="product.html">
+                    <a class="revealL" href="product.html">
                         <img src="img/panah.png" alt="">
                         READ MORE
                     </a>
@@ -120,15 +139,16 @@
             </div>
 
             <div class="product-content">
-                <img src="img/gulabubuk.png" alt="">
+                <img class="revealR" src="img/gulabubuk.png" alt="">
                 <div class="product-des">
                     <div class="produk-des">
-                        <h2>Palm Sugar Granulated</h2>
-                        <p>Taste the natural sweetness of our premium Granulated Palm Sugar, which is carefully obtained
+                        <h2 class="revealB">Palm Sugar Granulated</h2>
+                        <p class="revealT">Taste the natural sweetness of our premium Granulated Palm Sugar, which is
+                            carefully obtained
                             and processed from the finest palm trees. Enjoy its rich taste, perfect for perfecting
                             desserts and coffee.</p>
                     </div>
-                    <a href="product.html">
+                    <a class="revealL" href="product.html">
                         <img src="img/panah.png" alt="">
                         READ MORE
                     </a>
@@ -136,14 +156,15 @@
             </div>
 
             <div class="product-content">
-                <img src="img/sugar block.png" alt="">
+                <img class="revealL" src="img/sugar block.png" alt="">
                 <div class="product-des">
                     <div class="produk-des">
-                        <h2>Palm Sugar Block</h2>
-                        <p>Upgrade your cooking and baking with this delicious variety of palm sugar. Discover the
+                        <h2 class="revealB">Palm Sugar Block</h2>
+                        <p class="revealT">Upgrade your cooking and baking with this delicious variety of palm sugar.
+                            Discover the
                             convenience of our Palm Sugar Molds, which are expertly shaped for easy use and storage.</p>
                     </div>
-                    <a href="product.html">
+                    <a class="revealL" href="product.html">
                         <img src="img/panah.png" alt="">
                         READ MORE
                     </a>
@@ -155,100 +176,50 @@
     <!-- Proces Sequence -->
     <section class="process">
         <div class="process-title">
-            <h2>PROCESS SEQUENCE</h2>
-            <h1>PRIVATE BRAND PROCESS</h1>
-        </div>
-        <div class="aa">
-            <div class="process-aa">
-                <div class="as-1">
-                    <div class="box">
-                        <h2>Custommer Consultation</h2>
-                    </div>
-                </div>
-                <img class="no1" src="img/svg/Consultation.svg" alt="">
-            </div>
-        </div>
-        <div class="bb">
-            <div class="process-bb">
-                <div class="ab-2">
-                    <div class="box">
-                        <h2>Development Inquiry</h2>
-                    </div>
-                </div>
-                <img class="no2" src="img/svg/development.svg" alt="">
-            </div>
-        </div>
-        <div class="aa">
-            <div class="process-aa">
-                <div class="as-3">
-                    <div class="box">
-                        <h2>Contracting</h2>
-                    </div>
-                </div>
-                <img class="no3" src="img/svg/Contracting.svg" alt="">
-            </div>
-        </div>
-        <div class="bb">
-            <div class="process-bb">
-                <div class="ab-4">
-                    <div class="box">
-                        <h2>Product Development</h2>
-                    </div>
-                </div>
-                <img class="no4" src="img/svg/product.svg" alt="">
-            </div>
-        </div>
-        <div class="aa">
-            <div class="process-aa">
-                <div class="as-5">
-                    <div class="box">
-                        <h2>Prototype Approval</h2>
-                    </div>
-                </div>
-                <img class="no5" src="img/svg/prototype approval.svg" alt="">
-            </div>
-        </div>
-        <div class="bb">
-            <div class="process-bb">
-                <div class="ab-6">
-                    <div class="box">
-                        <h2>Certification</h2>
-                    </div>
-                </div>
-                <img class="no6" src="img/svg/certification.svg" alt="">
-            </div>
-        </div>
-        <div class="aa">
-            <div class="process-aa">
-                <div class="as-7">
-                    <div class="box">
-                        <h2>Mass Production</h2>
-                    </div>
-                </div>
-                <img class="no7" src="img/svg/mass production.svg" alt="">
-            </div>
-        </div>
-        <div class="bb">
-            <div class="process-bb">
-                <div class="ab-8">
-                    <div class="box">
-                        <h2>Quality Control</h2>
-                    </div>
-                </div>
-                <img class="no8" src="img/svg/Quality Control.svg" alt="">
-            </div>
+            <h2 class="revealB">PROCESS SEQUENCE</h2>
+            <h1 class="revealT">PRIVATE BRAND PROCESS</h1>
         </div>
 
-        <div class="aa">
-            <div class="process-aa">
-                <div class="as-9">
-                    <div class="box">
-                        <h2>Delivery</h2>
-                    </div>
-                </div>
-                <img class="no9" src="img/svg/delivery.svg" alt="">
-            </div>
+        <div class="process-map revealT">
+            <hr class="garis1">
+            <hr class="garis2">
+            <hr class="garis3">
+            <hr class="garis4">
+            <hr class="garis5">
+            <hr class="garis6">
+            <hr class="garis7">
+            <hr class="garis8">
+            <hr class="garis9">
+            <hr class="garis-utama">
+            <!-- <div class="bulat1"></div>
+            <div class="bulat2"></div>
+            <div class="bulat3"></div>
+            <div class="bulat4"></div>
+            <div class="bulat5"></div>
+            <div class="bulat6"></div>
+            <div class="bulat7"></div>
+            <div class="bulat8"></div>
+            <div class="bulat9"></div> -->
+            <p class="p-1">Customer Consutation</p>
+            <p class="p-3">Development Inquiry</p>
+            <p class="p-2">Contracting</p>
+            <p class="p-4">Product Development</p>
+            <p class="p-5">Prototype Approval</p>
+            <p class="p-6">Certification</p>
+            <p class="p-7">Mass Production</p>
+            <p class="p-8">Quality Control</p>
+            <p class="p-9">Delivery</p>
+            <img class="g-1" src="img/svg/Consultation.svg" alt="">
+            <img class="g-2" src="img/svg/Contracting.svg" alt="">
+            <img class="g-3" src="img/svg/prototype approval.svg" alt="">
+            <img class="g-4" src="img/svg/mass production.svg" alt="">
+            <img class="g-5" src="img/svg/delivery.svg" alt="">
+            <img class="g-6" src="img/svg/development.svg" alt="">
+            <img class="g-7" src="img/svg/product.svg" alt="">
+            <img class="g-8" src="img/svg/certification.svg" alt="">
+            <img class="g-9" src="img/svg/Quality Control.svg" alt="">
         </div>
+
 
     </section>
 
@@ -267,20 +238,20 @@
                 <li><a href="contact.html">Contact</a></li>
             </div>
             <div class="footer-contact">
-                    <p class="text">Contact Us</p>
-                    <div class="fc">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>iqbal@baaripalmsugar.id</p>
-                    </div>
-                    <div class="fc">
-                        <i class="fa-solid fa-phone"></i>
-                        <p>+62 8529 6672 800</p>
-                    </div>
-                    <div class="fc fc3">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>Mandiri Building 7th Floor Jl. KH. Zainul Arifin Medan, Indonesia 20151</p>
-                    </div>
+                <p class="text">Contact Us</p>
+                <div class="fc">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>iqbal@baaripalmsugar.id</p>
                 </div>
+                <div class="fc">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+62 8529 6672 800</p>
+                </div>
+                <div class="fc fc3">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Mandiri Building 7th Floor Jl. KH. Zainul Arifin Medan, Indonesia 20151</p>
+                </div>
+            </div>
 
         </section>
     </footer>

@@ -17,7 +17,7 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header id="mainHeader">
         <a href="index.html" class="logo">
             <img src="img/LOGO.png" alt="">
         </a>
@@ -31,6 +31,21 @@
         </ul>
     </header>
 
+        
+    <!-- bahasa -->
+    <div class="custom-dropdown" id="customDropdown">
+        <div class="custom-dropdown-select">
+            <img src="img/svg/uk.svg">
+            EN
+            <i class="fa-solid fa-caret-up icon" onclick=" toggleDropdown(), rotateIcon() "></i>
+        </div>
+        <div class="custom-dropdown-options" id="dropdownOptions">
+            <div class="custom-dropdown-option" onclick="selectOption('id/kontak-id.html')">
+                <img src="IMG/SVG/indonesia.svg" alt="Option 1"> Indonesia
+            </div>
+        </div>
+    </div>
+
     <!-- HOME||product Section -->
     <section class="home-contact" id="home-contact">
         <div class="home-contact-text">
@@ -40,7 +55,7 @@
     </section>
 
     <!-- Contact des -->
-    <section class="contact-des">
+    <section class="contact-des revealT">
         <p class="contact-text">Ready to bring the taste of organic Indonesian coconut palm sugar to your table? We are here to assist you every step of the way. Whether you need more information about our products or simply want to learn more about our mission and sustainable practices, our dedicated team at Indoglobe is eager to help.</p>
     </section>
 
@@ -48,45 +63,53 @@
     <!-- Contact add & form-->
     <section class="contact-adf">
         <div class="contact-add">
-            <div class="add">
+            <div class="add revealR">
                 <h1>Location</h1>
                 <div class="des">
                     <i class="fa-solid fa-location-dot"></i>
                     <p>Mandiri Building 7th Floor Jl. KH. Zainul Arifin Medan, Indonesia 20151</p>
                 </div>
             </div>
-            <div class="add">
+            <div class="add revealL">
                 <h1>Email</h1>
                 <div class="des">
                     <i class="fa-solid fa-envelope"></i>
                     <p>iqbal@baaripalmsugar.id</p>
                 </div>
             </div>
-            <div class="add">
+            <div class="add revealR">
                 <h1>Phone</h1>
                 <div class="des">
                     <i class="fa-solid fa-phone"></i>
                     <p>+62 8529 6672 800</p>
                 </div>
             </div>
+            <div class="add revealR">
+                <h1>Social Media</h1>
+                <div class="des">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
         </div>
-        <div class="contact-form">
-            <form id="contactForm">
-                <input type="text" id="name" name="name" placeholder="Full Name" required>
+        <div class="contact-form ">
+            <form id="contactForm ">
+                <input class="revealT" type="text" id="name" name="name" placeholder="Full Name" required>
 
-                <input type="email" id="email" name="company" placeholder="Company" required>
-                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input class="revealT" type="company" id="company" name="company" placeholder="Company" required>
+                <input class="revealT" type="email" id="email" name="email" placeholder="Email" required>
 
-                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <input class="revealT" type="text" id="subject" name="subject" placeholder="Subject" required>
 
-                <textarea id="message" name="message" rows="4" placeholder="Tell us more about your concern" required></textarea>
+                <textarea class="revealT" id="message" name="message" rows="4" placeholder="Tell us more about your concern" required></textarea>
         
-                <button type="button" onclick="submitForm()">Send Message</button>
+                <button class="revealB" type="button" onclick="submitForm()">Send Message</button>
               </form>
         </div>
     </section>
     <section class="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.0157042094856!2d98.67211017497314!3d3.5838678963903052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cc458894d9%3A0x2a8f6f0f4e4c2f86!2sMasjid%20Al%20Muslimin%20Lantai.%207!5e0!3m2!1sid!2sid!4v1703455086215!5m2!1sid!2sid" width="1280" height="432.65" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.04125035693!2d98.69178507416137!3d3.577994296396177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30313052fc6434b3%3A0x8144a1491d6640a2!2sJl.%20Puri%2C%20Kota%20Medan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1703647403932!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <!-- footer -->

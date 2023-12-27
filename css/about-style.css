@@ -22,10 +22,10 @@
 
 @font-face {
     font-family: 'headline';
-    src: url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
-        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
-        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
-        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype');
+    src:url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -98,7 +98,7 @@ li {
     align-items: center;
     justify-content: center;
     padding-top: 80px;
-    margin: 5%;
+    margin: 5% 5% 0 5%;
 }
 
 .home-about-text {
@@ -172,17 +172,17 @@ li {
 
 .glance-data .g-data span.num1 {
     font-family: "FreightNeo W03 Light Italic";
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .glance-data .g-data span.num {
     font-family: "FreightNeo W03 Light Italic";
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .glance-data .g-data span.text {
     font-family: "FreightNeo W03 Medium";
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .glance-des p.title {
@@ -477,6 +477,15 @@ img.vision{
     text-align: left;
     font-style: italic;
     margin-bottom: 3.8vw;
+    color: var(--third-color);
+}
+
+.cart p.no-id{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 3vw;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 0.6vw;
     color: var(--third-color);
 }
 

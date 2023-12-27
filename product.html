@@ -17,7 +17,7 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header id="mainHeader">
         <a href="index.html" class="logo">
             <img src="img/LOGO.png" alt="">
         </a>
@@ -30,6 +30,21 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </header>
+
+
+    <!-- bahasa -->
+    <div class="custom-dropdown" id="customDropdown">
+        <div class="custom-dropdown-select">
+            <img src="img/svg/uk.svg">
+            EN
+            <i class="fa-solid fa-caret-up icon" onclick=" toggleDropdown(), rotateIcon() "></i>
+        </div>
+        <div class="custom-dropdown-options" id="dropdownOptions">
+            <div class="custom-dropdown-option" onclick="selectOption('id/product-id.html')">
+                <img src="IMG/SVG/indonesia.svg" alt="Option 1"> Indonesia
+            </div>
+        </div>
+    </div>
 
     <!-- HOME||product Section -->
     <section class="home-product" id="home-product">
@@ -44,23 +59,27 @@
     <!-- Product -->
     <section class="product">
         <div class="product-title">
-            <h2>OUR PRODUCTS</h2>
-            <h1>BETTER & HEALTHIER</h1>
+            <h2 class="revealR">OUR PRODUCTS</h2>
+            <h1 class="revealL">BETTER & HEALTHIER</h1>
         </div>
         <div class="product-display">
             <div class="product-content">
-                <img class="syrup" src="img/sugar syrup.png" alt="">
+                <img class="syrup revealL" src="img/sugar syrup.png" alt="">
                 <div class="product-des">
-                    <div class="produk-des">
-                        <h2 >Palm Sugar Syrup</h2>
-                        <p> Eleveate your taste experience with the velvety allure of our Palm Sugar Syrup! Immerse in the captivating notes of molasses and toffee, carefully extracted from premium palm sap. Drizzle it over pancakes, waffles, or ice cream, and let the decedence unfold in each heavenly drop. Most suitable to be mixed with coffee.Its mouthful characteristic smoothens the flavor curve once mixed with coffee.</p>
+                    <div class="produk-des revealR">
+                        <h2>Palm Sugar Syrup</h2>
+                        <p> Eleveate your taste experience with the velvety allure of our Palm Sugar Syrup! Immerse in
+                            the captivating notes of molasses and toffee, carefully extracted from premium palm sap.
+                            Drizzle it over pancakes, waffles, or ice cream, and let the decedence unfold in each
+                            heavenly drop. Most suitable to be mixed with coffee.Its mouthful characteristic smoothens
+                            the flavor curve once mixed with coffee.</p>
 
                         <li>Net weight: 1 Kg or 5Kg</li>
                         <li>Packaging: 12 Jar / Carton or 4 Jar / Carton</li>
                         <li>Shelf life: 12 months when product stored</li>
                         <li>All products can be customized on request</li>
                     </div>
-                    <a class="read" href="contact.html">
+                    <a class="read revealT" href="">
                         <img src="img/panah.png" alt="">
                         ORDER PRODUCT
                     </a>
@@ -68,18 +87,22 @@
             </div>
 
             <div class="product-content">
-                <img class="granulated" src="img/product/gulabubuk.png" alt="">
+                <img class="granulated revealR" src="img/product/gulabubuk.png" alt="">
                 <div class="product-des">
-                    <div class="produk-des">
+                    <div class="produk-des revealL">
                         <h2>Palm Sugar Granulated</h2>
-                        <p>Natural sweetness with our delicious palm sugar. Powder Palm Sugar is soft, fine grained and mineral enriched. Made from the finest palm sap, this golden treasure brings a rich caramel essence to your culinary creations. It is perfect for all your baking needs, and especially good in cakes, cookies, toppings and pies. It is naturally gluten-free vegan, and can be used as a one-for-one replacement for regular sugar.</p>
+                        <p>Natural sweetness with our delicious palm sugar. Powder Palm Sugar is soft, fine grained and
+                            mineral enriched. Made from the finest palm sap, this golden treasure brings a rich caramel
+                            essence to your culinary creations. It is perfect for all your baking needs, and especially
+                            good in cakes, cookies, toppings and pies. It is naturally gluten-free vegan, and can be
+                            used as a one-for-one replacement for regular sugar.</p>
 
                         <li>Net weight: 20 Kg</li>
                         <li>Packaging: 20 Kg / Zak</li>
                         <li>Shelf life: 24 months when product stored</li>
                         <li>All products can be customized on request</li>
                     </div>
-                    <a class="read" href="contact.html">
+                    <a class="read revealT" href="">
                         <img src="img/panah.png" alt="">
                         ORDER PRODUCT
                     </a>
@@ -87,25 +110,78 @@
             </div>
 
             <div class="product-content">
-                <img class="block"  src="img/sugar block.png" alt="">
+                <img class="block revealL" src="img/sugar block.png" alt="">
                 <div class="product-des">
-                    <div class="produk-des">
+                    <div class="produk-des revealR">
                         <h2>Palm Sugar Block</h2>
-                        <p>Uncover the art of nature's sweets. Palm Sugar blocks are dense, tubular and enriched with minerals. Crafted to perfection, this aromatic gem has a smooth texture and a slightly earthy sweet taste. It's naturally gluten-free, vegan, and can be used as a replacement for regular sugar or dissolved in warm drinks for a great touch of authenticity.</p>
+                        <p>Uncover the art of nature's sweets. Palm Sugar blocks are dense, tubular and enriched with
+                            minerals. Crafted to perfection, this aromatic gem has a smooth texture and a slightly
+                            earthy sweet taste. It's naturally gluten-free, vegan, and can be used as a replacement for
+                            regular sugar or dissolved in warm drinks for a great touch of authenticity.</p>
 
-                        
+
                         <li>Net weight: 20 Kg</li>
                         <li>Packaging: 20 Kg / Zak</li>
                         <li>Shelf life: 12 months when product stored</li>
                         <li>All products can be customized on request</li>
                     </div>
-                    <a class="read" href="contact.html">
+                    <a class="read revealT" href="">
                         <img src="img/panah.png" alt="">
                         ORDER PRODUCT
                     </a>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Proces Sequence -->
+    <section class="process">
+        <div class="process-title">
+            <h2 class="revealB">PROCESS SEQUENCE</h2>
+            <h1 class="revealT">PRIVATE BRAND PROCESS</h1>
+        </div>
+
+        <div class="process-map revealT">
+            <hr class="garis1">
+            <hr class="garis2">
+            <hr class="garis3">
+            <hr class="garis4">
+            <hr class="garis5">
+            <hr class="garis6">
+            <hr class="garis7">
+            <hr class="garis8">
+            <hr class="garis9">
+            <hr class="garis-utama">
+            <!-- <div class="bulat1"></div>
+            <div class="bulat2"></div>
+            <div class="bulat3"></div>
+            <div class="bulat4"></div>
+            <div class="bulat5"></div>
+            <div class="bulat6"></div>
+            <div class="bulat7"></div>
+            <div class="bulat8"></div>
+            <div class="bulat9"></div> -->
+            <p class="p-1">Customer Consutation</p>
+            <p class="p-3">Development Inquiry</p>
+            <p class="p-2">Contracting</p>
+            <p class="p-4">Product Development</p>
+            <p class="p-5">Prototype Approval</p>
+            <p class="p-6">Certification</p>
+            <p class="p-7">Mass Production</p>
+            <p class="p-8">Quality Control</p>
+            <p class="p-9">Delivery</p>
+            <img class="g-1" src="img/svg/Consultation.svg" alt="">
+            <img class="g-2" src="img/svg/Contracting.svg" alt="">
+            <img class="g-3" src="img/svg/prototype approval.svg" alt="">
+            <img class="g-4" src="img/svg/mass production.svg" alt="">
+            <img class="g-5" src="img/svg/delivery.svg" alt="">
+            <img class="g-6" src="img/svg/development.svg" alt="">
+            <img class="g-7" src="img/svg/product.svg" alt="">
+            <img class="g-8" src="img/svg/certification.svg" alt="">
+            <img class="g-9" src="img/svg/Quality Control.svg" alt="">
+        </div>
+
+
     </section>
 
 

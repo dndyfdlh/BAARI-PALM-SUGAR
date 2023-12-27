@@ -21,19 +21,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;500&display=swap');
 
 
-
 @font-face {
     font-family: 'headline';
-    src:url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
-        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
-        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
-        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype'); 
-        font-weight: normal;
-        font-style: normal;
-}
-@font-face {
-    font-family: sourcesanspro;
-    src: url('font/SourceSansPro-ExtraLight.otf');
+    src:url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root{
@@ -44,10 +39,12 @@
     --headline-color : #FA5246;
 
     /* ====Hover colors==== */
+    --awal-bg-color:#E8DCB3;
     --hover-color : #2cb67d;
-    --button-hover-color : #FFB534;
+    --button-hover-color : #FCBB3B;
 
     /* ====Background colors==== */
+    --title-bg-color:#475D5B;
     --body-bg-color: #fefefe;
     --card-bg-color: #fff;
     --modal-bg-color:#fff;
@@ -77,6 +74,7 @@ body{
     background: var(--body-bg-color);
     margin: 2rem 0 0 0;
     transition: .5s ease;
+    position: relative;
 }
 a{
     text-decoration: none;
@@ -90,7 +88,7 @@ li{
 header{
     z-index: 99999;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background:var(--card-bg-color);
@@ -98,7 +96,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 14%;
+    padding: 8px 10%;
+    transition: top 0.3s;
 
 }
 
@@ -141,11 +140,11 @@ header{
 }
 
 .home-text{
-    padding-top: 160px;
+    padding-top: 210px;
 }
 
 .home-text h1{
-    font-family: headline;
+    font-family: 'headline';
     font-size: 45px;
     color: var(--body-bg-color);
     align-items: center;
@@ -343,11 +342,12 @@ header{
     position: relative; 
     align-items: center;
     justify-content: center;
-    padding: 60px 5% 20px;
+    padding: 60px 0 20px;
     background-color: #fff;
+    /* border: solid; */
 }
 
-.distribution::before{
+/* .distribution::before{
     content: '';
     position: absolute;
     top: 0;
@@ -359,7 +359,7 @@ header{
     background-position: top left;
     background-size: 400px;
     opacity: 0.08;
-}
+} */
 
 .distribution .distribution-content{
     position: relative;
@@ -369,21 +369,46 @@ header{
 
 .distribution-content .distribution-title{
     padding-bottom: 50px;
+    border: solid;
+    background-color: var(--title-bg-color) ;    
+    height: 210px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
 }
+/* .distribution-content .distribution-title::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/4.png) ;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 400px;
+    opacity: 0.08;
+} */
 
 .distribution-title h2{
     font-family: "FreightNeo W03 Medium";
     font-weight: 300;
     font-size: 35px;
+    color: var(--modal-bg-color);
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
 }
 
 .distribution-title h1{
     font-family: 'Noto Sans Tamil', sans-serif;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 50px;
     margin-bottom: 5px;
-    color: var(--headline-color);
+    color: var(--button-hover-color);
 }
 
 .distribution-content img{
@@ -400,8 +425,9 @@ header{
 
 .isi-data .data{
     margin: 10px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* border: solid; */
 }
 
 .isi-data .data p{
@@ -412,7 +438,8 @@ header{
     font-family: "FreightNeo W03 Light Italic";
     color: var(--headline-color);
     margin-bottom: 20px;
-
+    /* width: 20vw; */
+    /* border: solid; */
 }
 
 .isi-data .data span.num1{
@@ -437,11 +464,11 @@ header{
     position: relative; 
     align-items: center;
     justify-content: center;
-    padding: 60px 5% 20px;
+    padding: 60px 0 20px;
     background-color: var(--bg-color);
 }
 
-.ourproduct::before{
+/* .ourproduct::before{
     content: '';
     position: absolute;
     top: 0;
@@ -452,21 +479,29 @@ header{
     background-repeat: no-repeat;
     background-position: top left, bottom right;
     background-size: 400px;
-    opacity: 0.08;
-    animation: arrow-down ease 2s infinite;
-}
+    opacity: 0.08; */
+    /* animation: arrow-down ease 2s infinite; */
+/* } */
 
 .ourproduct-title{
     padding-bottom: 50px;
-    position: relative;
-    text-align: center;
+    border: solid;
+    width: 100%;
+    background-color: var(--title-bg-color) ;    
+    height: 210px;
+    position: absolute;
     justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    top: 0;
 }
 
 .ourproduct-title h2{
     font-family: "FreightNeo W03 Medium";
     font-weight: 300;
     font-size: 35px;
+    color: var(--modal-bg-color);
+    margin-top: 50px;
 }
 
 .ourproduct-title h1{
@@ -475,7 +510,12 @@ header{
     font-weight: 400;
     font-size: 50px;
     margin-bottom: 5px;
-    color: var(--headline-color);
+    color: var(--button-hover-color);
+}
+
+.product-display{
+    margin-top: 150px;
+    padding:5%; 
 }
 
 .product-content{
@@ -483,12 +523,15 @@ header{
     /* align-items: center; */
     justify-content: center;
     display: flex;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
+    /* border: solid; */
 }
 
 .product-content img{
-    width: 480px;
+    width: 400px;
     height: auto;
+    /* border: solid; */
+    /* margin: 50px; */
 }
 
 .product-des .produk-des h2{
@@ -504,6 +547,7 @@ header{
     letter-spacing: 0.6px;
     line-height: 1.5;
     padding-bottom: 20px;
+    width: 500px;
 }
 
 .product-des a{
@@ -516,6 +560,7 @@ header{
     animation: arrow-left ease 2s infinite;
     transition: all .3s ease;
     width: 350px;
+    /* border: solid; */
 }
 .product-des a img{
     width: 100px;
@@ -537,21 +582,58 @@ header{
     position: relative; 
     align-items: center;
     justify-content: center;
-    padding: 60px 5% 80px;
+    padding: 60px 0 80px;
     background-color: #fff;
+    height: auto;
+}
+
+.process::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bg10.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 1000px;
+    opacity:0.05;
+}
+
+.process-map{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    /* border: solid; */
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    margin-top: 230px;
 }
 
 .process-title{
     padding-bottom: 50px;
-    position: relative;
-    text-align: center;
+    border: solid;
+    width: 100%;
+    background-color: var(--title-bg-color) ;    
+    height: 210px;
+    position: absolute;
     justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    top: 0;
 }
 
 .process-title h2{
     font-family: "FreightNeo W03 Medium";
     font-weight: 300;
     font-size: 35px;
+    color: var(--modal-bg-color);
+    margin-top: 50px;
 }
 
 .process-title h1{
@@ -560,298 +642,353 @@ header{
     font-weight: 400;
     font-size: 50px;
     margin-bottom: 5px;
-    color: var(--headline-color);
+    color: var(--button-hover-color);
+    
 }
 
-/* 1 */
-.aa{
-    position: relative;
-    display: flex;
-    justify-content: end;
-    /* border: solid; */
-}
 
-.process-aa{
-    position: relative;
-    display: flex;
-    text-align: center;
-    justify-content: end;
-    /* border: solid red; */
-    /* margin: 10px; */
-    margin-right: 8%;
-    width: 650px;
 
-}
-.process-aa img{
+.process-map .garis-utama{
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-}
-.process-aa .as-1{
-    position: relative;
-    /* border: solid; */
-    width: 100%;
-}
-.process-aa .as-1 .box{
-    position: relative;
-    display: flex;
-    justify-content: start;
-    width: 500px;
-    margin-top: 100px;
-    padding-left: 0;
-    border: gray dashed medium;
-    border-width: 2px;
-    border-radius: 5px;
-    margin-right: 10%;
+    width: 80%;
+    left: 10%;
+    top: 260px;
+    height: 5px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
 }
 
-.process-aa .box h2{
-    /* border: solid; */
-    margin: 15px;
-    font-family: "FreightNeo W03 Medium";
-    font-weight: 300;
-    font-size: 30px;
-}
-
-/* 2 */
-/* process-bb */
-.bb{
-    position: relative;
-    display: flex;
-    justify-content: start;
-    /* border: solid; */
-}
-
-.process-bb{
-    position: relative;
-    display: flex;
-    text-align: center;
-    justify-content: start;
-    /* border: solid red; */
-    margin-left: 8%;
-    width: 650px;
-
-}
-.process-bb img{
+/* .process-map .bulat1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    margin-top: 50px;
+    left: 50%;
+    top: 257px;
 }
-.process-bb .ab-2{
-    position: relative;
-    /* border: solid; */
-    width: 100%;
-    margin: 30px;
-}
-.process-bb .ab-2 .box{
-    position: relative;
-    display: flex;
-    justify-content: start;
-    width: 500px;
-    margin-top: 100px;
-    padding-left: 0;
-    border: gray dashed medium;
-    border-width: 2px;
-    border-radius: 5px;
-    margin-right: 10%;
-}
-
-.process-bb .box h2{
-    /* border: solid; */
-    margin: 15px;
-    font-family: "FreightNeo W03 Medium";
-    font-weight: 300;
-    font-size: 30px;
-}
-
-/* 3 */
-.process-aa .as-3{
-    position: relative;
-    /* border: solid; */
-    width: 60%;
-    margin-right: 5%;
-}
-.process-aa .as-3 .box{
-    position: relative;
-    display: flex;
-    justify-content: start;
-    width: 350px;
-    margin-top: 100px;
-    padding-left: 0;
-    border: gray dashed medium;
-    border-width: 2px;
-    border-radius: 5px;
-    /* margin-right: 10%; */
-}
-
-.process-aa img.no3{
-    width: 120px;
+.process-map .bulat2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
     position: absolute;
-    margin-top: -10px;
-    margin-right: 10%;
-
+    left: 58.7%;
+    top: 257px;
 }
-
-/* 4 */
-.process-bb .ab-4{
-    position: relative;
-    width: 100%;
-    margin: 30px;
-}
-.process-bb .ab-4 .box{
-    position: relative;
-    display: flex;
-    justify-content: start;
-    width: 600px;
-    margin-top: 100px;
-    padding-left: 0;
-    border: gray dashed medium;
-    border-width: 2px;
-    border-radius: 5px;
-    margin-right: 10%;
-}
-.process-bb img.no4{
+.process-map .bulat2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    margin-top: 50px;
-}
+    left: 58.7%;
+    top: 257px;
 
-/* 5 */
-.process-aa .as-5{
-    position: relative;
-    /* border: solid; */
-    width: 60%;
-    margin-right: 8%;
 }
-.process-aa .as-5 .box{
-    position: relative;
-    display: flex;
-    justify-content: start;
-    width: 450px;
-    margin-top: 95px;
-    padding-left: 0;
-    border: gray dashed medium;
-    border-width: 2px;
-    border-radius: 5px;
-    /* margin-right: 10%; */
-}
-
-.process-aa img.no5{
-    width: 200px;
+.process-map .bulat3{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
     position: absolute;
-    margin-top: 5px;
-    margin-right: -5%;
-}
+    left: 67.4%;
+    top: 257px;
 
-/* 6 */
-.process-bb .ab-6{
-    position: relative;
-    width: 100%;
-    margin-left: 5%;
 }
-.process-bb .ab-6 .box{
-    position: relative;
-    display: flex;
-    justify-content: start;
-    width: 400px;
-    margin-top: 100px;
-    padding-left: 0;
-    border: gray dashed medium;
-    border-width: 2px;
-    border-radius: 5px;
-    margin-right: 10%;
-}
-.process-bb img.no6{
+.process-map .bulat4{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
     position: absolute;
-    top: 0;
-    right: 80px;
-    width: 260px;
-    margin-top: 30px;
-}
+    left: 76.1%;
+    top: 257px;
 
-/* 7 */
-.process-aa .as-7{
-    position: relative;
-    width: 60%;
-    margin-right: 8%;
 }
-.process-aa .as-7 .box{
-    position: relative;
-    display: flex;
-    justify-content: start;
-    width: 450px;
-    margin-top: 95px;
-    padding-left: 0;
-    border: gray dashed medium;
-    border-width: 2px;
-    border-radius: 5px;
-    /* margin-right: 10%; */
-}
-
-.process-aa img.no7{
-    width: 200px;
+.process-map .bulat5{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
     position: absolute;
-    margin-top: 30px;
-    margin-right: -5%;
-}
+    left: 84.9%;
+    top: 257px;
 
-
-/* 8 */
-.process-bb .ab-8{
-    position: relative;
-    width: 100%;
-    margin-left: 5%;
 }
-.process-bb .ab-8 .box{
-    position: relative;
-    display: flex;
-    justify-content: start;
-    width: 380px;
-    margin-top: 100px;
-    padding-left: 0;
-    border: gray dashed medium;
-    border-width: 2px;
-    border-radius: 5px;
-    margin-right: 10%;
-}
-.process-bb img.no8{
+.process-map .bulat6{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
     position: absolute;
-    top: 0;
-    right: 100px;
+    left: 41.3%;
+    top: 257px;
+
+}
+
+.process-map .bulat7{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 32.6%;
+    top: 257px;
+
+}
+
+.process-map .bulat8{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 23.9%;
+    top: 257px;
+
+}
+
+.process-map .bulat9{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 15%;
+    top: 257px;
+
+} */
+
+.process-map .garis1{
+    position: absolute;
+    left: 50%;
+    top: 212px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+
+.process-map .garis2{
+    position: absolute;
+    left: 60%;
+    top: 260px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+
+.process-map .garis3{
+    position: absolute;
+    left: 70%;
+    top: 212px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis4{
+    position: absolute;
+    left: 80%;
+    top: 260px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis5{
+    position: absolute;
+    left: 89.7%;
+    top: 212px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis6{
+    position: absolute;
+    left: 40%;
+    top: 260px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis7{
+    position: absolute;
+    left: 30%;
+    top: 212px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis8{
+    position: absolute;
+    left: 20%;
+    top: 260px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+.process-map .garis9{
+    position: absolute;
+    left: 10%;
+    top: 212px;
+    height: 50px;
+    width: 3px;
+    background-color: green;
+    color: green;
+    border-radius: 2px;
+}
+
+.process-map .p-1{
+    position: absolute;
+    left: 3%;
+    top: 160px;
+}
+.process-map .p-3{
+    position: absolute;
+    left: 13%;
+    top: 340px;
+}
+
+.process-map .p-2{
+    position: absolute;
+    left: 26.3%;
+    top: 160px;
+}
+
+.process-map .p-2-id{
+    position: absolute;
+    left: 27.8%;
+    top: 160px;
+}
+
+.process-map .p-4{
+    position: absolute;
+    left: 33%;
+    top: 340px;
+}
+
+.process-map .p-5{
+    position: absolute;
+    left: 44%;
+    top: 160px;
+}
+.process-map .p-5-id{
+    position: absolute;
+    left: 43%;
+    top: 160px;
+}
+
+.process-map .p-6{
+    position: absolute;
+    left: 56.2%;
+    top: 340px;
+}
+.process-map .p-6-id{
+    position: absolute;
+    left: 57%;
+    top: 340px;
+}
+
+.process-map .p-7{
+    position: absolute;
+    left: 64.5%;
+    top: 160px;
+}
+.process-map .p-8{
+    position: absolute;
+    left: 75.5%;
+    top: 340px;
+}
+.process-map .p-9{
+    position: absolute;
+    left: 87%;
+    top: 160px;
+}
+.process-map .p-9-id{
+    position: absolute;
+    left: 86%;
+    top: 160px;
+}
+
+.process-map img.g-1{
+    position: absolute;
+    width: 150px;
+    left: 4%;
+    top: 70px;
+}
+
+.process-map img.g-2{
+    position: absolute;
+    width: 80px;
+    left: 27%;
+    top: 25px;
+}
+
+.process-map img.g-3{
+    position: absolute;
+    width: 130px;
+    left: 45%;
+    top: 25px;
+}
+
+.process-map img.g-4{
+    position: absolute;
+    width: 130px;
+    left: 64.5%;
+    top: 40px;
+}
+
+.process-map img.g-5{
+    position: absolute;
+    width: 130px;
+    left: 84%;
+    top: 85px;
+}
+
+.process-map img.g-6{
+    position: absolute;
+    width: 160px;
+    left: 12%;
+    top: 400px;
+}
+
+.process-map img.g-7{
+    position: absolute;
     width: 180px;
-    margin-top: 40px;
+    left: 33%;
+    top: 400px;
 }
 
-/* 7 */
-.process-aa .as-9{
-    position: relative;
-    width: 60%;
-    margin-right: 30%;
-}
-.process-aa .as-9 .box{
-    position: relative;
-    display: flex;
-    justify-content: start;
-    width: 450px;
-    margin-top: 140px;
-    padding-left: 0;
-    border: gray dashed medium;
-    border-width: 2px;
-    border-radius: 5px;
-    /* margin-right: 10%; */
-}
-
-.process-aa img.no9{
-    width: 300px;
+.process-map img.g-8{
     position: absolute;
-    margin-top: 60px;
-    margin-right: 18%;
+    width: 160px;
+    left: 54%;
+    top: 400px;
 }
+
+.process-map img.g-9{
+    position: absolute;
+    width: 160px;
+    left: 74%;
+    top: 400px;
+}
+
 
 
 footer{
@@ -864,7 +1001,7 @@ footer{
     background-color: var(--bg-color);
 }
 
-footer::before{
+/* footer::before{
     content: '';
     position: absolute;
     top: 0;
@@ -875,7 +1012,7 @@ footer::before{
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 400px;
-}
+} */
 
 .bagian-footer{
     position: relative;
@@ -915,8 +1052,8 @@ footer::before{
     position: relative;
     align-items: center;
     /* border: solid; */
-    margin-right: 77px;
-    width: 130px;
+    margin-right: 57px;
+    width: 155px;
 }
 
 .footer-nav li{
@@ -982,6 +1119,138 @@ footer::before{
 }
 
 
+
+/* CSS untuk dropdown kustom */
+.custom-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36/30% );
+    background: #fff;
+    position: fixed;
+    z-index: 8000;
+    bottom: 40px;
+    right: 30px;
+    /* padding: 0.5vw 1vw; */
+/*   border: solid;*/
+}
+
+.custom-dropdown-select {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 8001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.custom-dropdown-select img{
+    margin-right: 0.5vw;
+    width: 2vw;
+}
+
+.custom-dropdown-select i{
+    margin-left: 0.5vw;
+    cursor: pointer;
+/*  border: solid;*/
+}
+
+.custom-dropdown-options {
+    position: absolute;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36/30% );
+    border-radius: 8px;
+    display: none;
+    padding: 0 0.5vw;
+    z-index: 8002;
+    background: #fff;
+    margin-bottom: 93px;
+    margin-right: 40px;
+    /* margin-right: 75px; */
+}
+
+.custom-dropdown-option {
+    display: block;
+    padding: 10px;
+    z-index: 8003;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+}
+
+.custom-dropdown-options:not(img):hover{
+    background-color: var(--line-color);
+}
+
+.custom-dropdown-option img {
+    max-width: 20px;
+    max-height: 20px;
+    z-index: 8004;
+    margin-right: 10px;
+}
+
+.icon.rotate {
+    transform: rotate(180deg);
+}
+
+
+/* revealR */
+.revealR{
+    position: relative;
+    transform: translatex(20px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.revealR.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* revealL */
+.revealL{
+    position: relative;
+    transform: translatex(-20px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.revealL.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* revealT */
+.revealT{
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.revealT.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* revealB */
+.revealB{
+    position: relative;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.revealB.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
 @keyframes arrow-down{
     0%{
         transform: translateY(0);
@@ -999,3 +1268,12 @@ footer::before{
         transform: translateX(8px);
     }
 }
+
+
+
+
+
+
+
+
+

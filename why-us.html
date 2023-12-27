@@ -17,7 +17,7 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header id="mainHeader">
         <a href="index.html" class="logo">
             <img src="img/LOGO.png" alt="">
         </a>
@@ -31,6 +31,21 @@
         </ul>
     </header>
 
+        
+    <!-- bahasa -->
+    <div class="custom-dropdown" id="customDropdown">
+        <div class="custom-dropdown-select">
+            <img src="img/svg/uk.svg">
+            EN
+            <i class="fa-solid fa-caret-up icon" onclick=" toggleDropdown(), rotateIcon() "></i>
+        </div>
+        <div class="custom-dropdown-options" id="dropdownOptions">
+            <div class="custom-dropdown-option" onclick="selectOption('id/why-us-id.html')">
+                <img src="IMG/SVG/indonesia.svg" alt="Option 1"> Indonesia
+            </div>
+        </div>
+    </div>
+
     <!-- HOME||ABOUT Section -->
     <section class="home-why" id="home-why">
         <div class="home-why-text">
@@ -42,14 +57,14 @@
     <!-- Harmony -->
     <section class="harmony">
         <div class="harmony-title">
-            <h2>THE PROCESS</h2>
-            <h1>SWEET HARMONY</h1>
+            <h2 class="revealR">THE PROCESS</h2>
+            <h1 class="revealL">SWEET HARMONY</h1>
         </div>
     </section>
 
     <!-- Bagian 1 -->
     <section class="bagian-1">
-        <div class="bagian-1-cover">
+        <div class="bagian-1-cover revealR">
             <div class="bagian-text">
                 <h1>Our Palm Sugar is made from the sweet stem sap of the “palm blossoms”</h1>
                 <p>The flowers that bloom to make the actual palm tree fruits. When the blossoms are mature, the nectar
@@ -63,7 +78,7 @@
 
     <!-- Bagian 2 -->
     <section class="bagian-2">
-        <div class="bagian-2-cover">
+        <div class="bagian-2-cover revealL">
             <div class="bagian-text">
                 <h1>PRODUCED BY SLOWLY HEATING THIS SAP BETWEEN 40°C - 120°C FOR A PERIOD OF TIME BETWEEN 1.5-3 HOURS
                 </h1>
@@ -79,7 +94,7 @@
 
     <!-- Bagian 3 -->
     <section class="bagian-3">
-        <div class="bagian-3-cover">
+        <div class="bagian-3-cover revealR">
             <div class="bagian-text">
                 <h1>CAN BE COMBINED WITH <br>DRINKS OR FOOD
                 </h1>
@@ -95,18 +110,18 @@
     <!-- Harmony -->
     <section class="pure">
         <div class="pure-title">
-            <h2>WHY BAARI PALM SUGAR</h2>
-            <h1>PURE ESSENCE</h1>
+            <h2 class="revealR">WHY BAARI PALM SUGAR</h2>
+            <h1 class="revealL">PURE ESSENCE</h1>
         </div>
     </section>
 
     <section class="kenapa">
         <div class="kenapa-cart">
-            <div class="cart-img no-1">
+            <div class="cart-img no-1 revealT">
                 <img src="img/why-us/cart-img-1.png" alt="">
             </div>
 
-            <div class="cart no-2">
+            <div class="cart no-2 revealB">
                 <h1 class="no">01</h1>
                 <img src="img/why-us/svg/taste-great 1.svg" alt="">
                 <h3>TASTE GREAT</h3>
@@ -118,7 +133,7 @@
                 </div>
             </div>
 
-            <div class="cart no-1">
+            <div class="cart no-1 revealT">
                 <h1 class="no">02</h1>
                 <img src="img/why-us/svg/low-glycemic 1.svg" alt="">
                 <h3>LOW GLYCEMIC INDEX</h3>
@@ -134,7 +149,7 @@
         </div>
 
         <div class="kenapa-cart">
-            <div class="cart no-2">
+            <div class="cart no-2 revealB">
                 <h1 class="no">03</h1>
                 <img class="gambar" src="img/why-us/svg/pure 1.svg" alt="">
                 <h3>PURE AND UNREFINED</h3>
@@ -150,7 +165,7 @@
                 </div>
             </div>
 
-            <div class="cart no-1">
+            <div class="cart no-1 revealT">
                 <h1 class="no">04</h1>
                 <img src="img/why-us/svg/organic 1.svg" alt="">
                 <h3>ORGANIC AND NON GMO</h3>
@@ -165,14 +180,14 @@
                 </div>
 
             </div>
-            <div class="cart-img-2 no-1">
+            <div class="cart-img-2 no-1 revealB">
                 <img src="img/why-us/cart-img-2.png" alt="">
             </div>
         </div>
 
 
         <div class="kenapa-cart">
-            <div class="cart no-2">
+            <div class="cart no-2 revealT">
                 <h1 class="no">05</h1>
                 <img class="gambar" src="img/why-us/svg/replacement 1.svg" alt="">
                 <h3>1:1 REPLACEMENT TO SUGAR CANE</h3>
@@ -183,7 +198,7 @@
                 </div>
             </div>
 
-            <div class="cart no-1">
+            <div class="cart no-1 revealB">
                 <h1 class="no">06</h1>
                 <img class="gambar" src="img/why-us/svg/rich 1.svg" alt="">
                 <h3>RICH IN ESSENTIAL MINERALS & AMINO ACID</h3>
@@ -197,7 +212,7 @@
                 </div>
             </div>
 
-            <div class="cart no-1">
+            <div class="cart no-1 revealT">
                 <h1 class="no">07</h1>
                 <img class="gambar" src="img/why-us/svg/low-carbon 1.svg" alt="">
                 <h3>LOW CARBON FOOTPRINT</h3>

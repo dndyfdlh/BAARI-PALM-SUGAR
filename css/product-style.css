@@ -22,10 +22,10 @@
 
 @font-face {
     font-family: 'headline';
-    src: url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
-        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
-        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
-        url('font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype');
+    src:url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.woff') format('woff'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.svg#PassionSansPDbi-SemiBoldSmallCaps') format('svg'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot'),
+        url('../font/PassionSansPDbi-SemiBoldSmallCaps.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -93,15 +93,29 @@ li {
 
 .home-product{
     width: 90%;
-    margin: 5%;
+    margin:5%;
     height: 80vh;
     background-image: url(../img/product/cover.png);
     background-size: cover;
-    position: relativ;
+    position: relative;
     background-position: center;
     align-items: center;
     justify-content: center;
     padding-top: 80px;
+}
+
+.home-product::before{
+    content: '';
+    position: absolute;
+    /* width: 90%; */
+    /* margin:5%; */
+    height: 80vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.3;
 }
 
 .home-product-text {
@@ -145,7 +159,7 @@ li {
     align-items: center;
     justify-content: center;
     padding: 60px 5% 20px;
-    background-color: var(--modal-bg-color);
+    background-color: var(--bg-color);
 }
 
 .product::before{
@@ -241,6 +255,7 @@ li {
     letter-spacing: 0.6px;
     line-height: 1.5;
     padding-bottom: 20px;
+    text-align: justify;
 }
 
 .product-des .produk-des li{
