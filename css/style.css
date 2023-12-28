@@ -415,7 +415,7 @@ header{
 .distribution-content img{
     width: 1000px;
     height: auto;
-
+    margin-top: 40px;
 }
 
 .isi-data{
@@ -467,6 +467,7 @@ header{
     justify-content: center;
     padding: 60px 0 20px;
     background-color: var(--bg-color);
+    margin-bottom: 10px;
 }
 
 /* .ourproduct::before{
@@ -476,13 +477,13 @@ header{
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../img/bg2.png), url(../img/bg5.png);
-    background-repeat: no-repeat;
-    background-position: top left, bottom right;
-    background-size: 400px;
-    opacity: 0.08; */
-    /* animation: arrow-down ease 2s infinite; */
-/* } */
+    background-image: url(../img/bawah.png);
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    background-size: 99vw;
+    opacity: 0.2;
+    animation: arrow-down ease 2s infinite;
+}  */
 
 .ourproduct-title{
     padding-bottom: 50px;
@@ -514,34 +515,42 @@ header{
     color: var(--button-hover-color);
 }
 
-.product-display{
-    margin-top: 150px;
-    padding:5%; 
+.ourproduct .product-display{
+    margin-top: 200px; 
+    /* border: solid red; */
 }
 
-.product-content{
+.ourproduct .product-display .product-content{
     position: relative;
-    /* align-items: center; */
     justify-content: center;
     display: flex;
-    /* padding-bottom: 30px; */
     /* border: solid; */
 }
 
-.product-content img{
+.ourproduct .product-display .product-content img{
     width: 400px;
     height: auto;
+    margin-right: 50px;
     /* border: solid; */
     /* margin: 50px; */
 }
 
-.product-des .produk-des h2{
-    font-family: "FreightNeo W03 Light Italic";
-    font-size: 40px;
-    padding: 50px 0 20px;
+.ourproduct .product-display .product-content img.bubuk{
+    width: 400px;
+    height: 300px;
+    margin-right: 50px;
+    /* border: solid; */
+    /* margin: 50px; */
 }
 
-.product-des .produk-des p{
+
+.ourproduct .product-display .product-content .product-des .produk-des h2{
+    font-family: "FreightNeo W03 Light Italic";
+    font-size: 40px;
+    padding: 20px 0 20px;
+}
+
+.ourproduct .product-display .product-content .product-des .produk-des p{
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -551,7 +560,7 @@ header{
     width: 500px;
 }
 
-.product-des a{
+.ourproduct .product-display .product-content .product-des a{
     display: flex;
     margin-top: 30px;
     align-items: center;
@@ -563,13 +572,13 @@ header{
     width: 350px;
     /* border: solid; */
 }
-.product-des a img{
+.ourproduct .product-display .product-content .product-des a img{
     width: 100px;
     height: 5px;
     padding-right: 15px;
 }
 
-.product-des a:hover{
+.ourproduct .product-display .product-content .product-des a:hover{
     letter-spacing: 2px;
     font-family: "FreightNeo W03 Medium";
     animation: none;
@@ -1009,9 +1018,9 @@ footer{
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../img/bg3.png) ;
+    background-image: url(../img/bawah.png) ;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: bottom;
     background-size: 400px;
 } */
 

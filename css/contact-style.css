@@ -172,6 +172,7 @@ li {
     /* border: solid; */
     margin-right: 8vw;
     /* justify-content: center; */
+    /* border: solid; */
 }
 
 .contact-add .add:not(:last-child){
@@ -180,26 +181,28 @@ li {
 
 .contact-add .add h1{
     font-family: 'Noto Sans Tamil', serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 3vw;
     /* font-style: italic; */
-    color: var(--headline-color);
+    color: var(--third-color);
 }
 
 .add .des{
     position: relative;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
+    margin: 1.8vw 0 0 1vw;
+    /* border: solid; */
 }
 
 .add .des i{
     font-size: 2.1vw;
-    margin: 0.8vw 2vw 0 1vw;
+    margin: 0.3vw 2vw 0 0;
 }
 
 .contact-add .add p{
     font-family: 'Source Sans 3', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.7vw;
 }
 
@@ -216,8 +219,8 @@ input,
 textarea {
     background-color:var(--modal-bg-color);
     border: #d8d7d7 solid 0.12vw;
-    padding: 1.3vw 15px;
-    margin: 0.8vw 0;
+    padding: 0.9vw 15px;
+    margin: 0.5vw 0;
     width: 100%;
     font-size: 0.8rem;
     border-radius: 8px;
@@ -248,7 +251,6 @@ button {
 button:hover {
     opacity: 0.7;
 }
-
 
 .maps{
     width: 100%;

@@ -259,12 +259,12 @@ li {
 
 .about-des-isi-content p {
     font-family: 'Source Sans 3', sans-serif;
-    text-align: justify;
     margin-top: 30px;
     font-weight: 300;
     font-size: 15px;
     letter-spacing: 0.6px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 /* Our Value */
@@ -403,7 +403,6 @@ img.value{
 
 .vision-des p.des {
     font-family: "FreightNeo W03 Medium";
-    text-align: justify;
     margin-top: 20px;
     font-weight: 500;
     font-size: 2vw;
@@ -509,7 +508,148 @@ img.vision{
     font-family: "FreightNeo W03 Medium";
     font-size: 1.5vw;
     text-align: left;
-    text-align: justify;
 }
 
 
+/* GAleri */
+.galeri {
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: #fff;
+    /* border: solid; */
+}
+
+.galeri .galeri-content{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.galeri-content .galeri-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 30px 0;
+    background-color: var(--first-color);
+} 
+
+.galeri-content .galeri-title h1{
+    font-family: "FreightNeo W03 Medium";
+    /* font-family: 'Noto Sans Tamil', sans-serif; */
+    /* font-style: italic; */
+    font-weight: 500;
+    font-size: 5vw;
+    color: var(--third-color);
+}
+
+
+
+/* PRODUCTS */
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+
+  }
+  
+  .product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 260px;
+    height: 200px;
+    margin-right: 40px;
+  }
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36/80% );
+    overflow: hidden;
+  }
+  
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+
+
+  #lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+  }
+  
+  #lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+  }

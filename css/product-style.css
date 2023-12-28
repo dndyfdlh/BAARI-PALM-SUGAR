@@ -158,11 +158,12 @@ li {
     position: relative; 
     align-items: center;
     justify-content: center;
-    padding: 60px 5% 20px;
+    padding: 60px 0 20px;
     background-color: var(--bg-color);
+    margin-bottom: 5px;
 }
 
-.product::before{
+/* .product::before{
     content: '';
     position: absolute;
     top: 0;
@@ -175,18 +176,27 @@ li {
     background-size: 400px;
     opacity: 0.08;
     animation: arrow-down ease 2s infinite;
-}
+} */
 
 .product-title{
-    position: relative;
-    text-align: center;
+    padding-bottom: 50px;
+    border: solid;
+    width: 100%;
+    background-color: var(--title-bg-color) ;    
+    height: 210px;
+    position: absolute;
     justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    top: 0;
 }
 
 .product-title h2{
     font-family: "FreightNeo W03 Medium";
     font-weight: 300;
     font-size: 35px;
+    color: var(--modal-bg-color);
+    margin-top: 50px;
 }
 
 .product-title h1{
@@ -195,7 +205,12 @@ li {
     font-weight: 400;
     font-size: 50px;
     margin-bottom: 5px;
-    color: var(--headline-color);
+    color: var(--button-hover-color);
+}
+
+.product .product-display{
+    /* border: solid red; */
+    margin-top: 150px;
 }
 
 .product-content{
@@ -203,13 +218,14 @@ li {
     /* align-items: center; */
     justify-content: center;
     display: flex;
+    /* margin-top: 200px; */
     padding-bottom: 30px;
     position: relative;
+    margin: 3% 5% 0;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     /* border: solid; */
 }
-
 
 .product-content img.syrup{
     width: 40%;
@@ -218,6 +234,8 @@ li {
     justify-content: center;
     align-items: center;
     margin-right: 2vw;
+    margin-top: 4vw;
+    /* border: solid; */
 }
 
 .product-content img.granulated{
@@ -240,12 +258,12 @@ li {
     /* border: solid; */
 }
 
-.product-des .produk-des h2.title{
-    font-family: "FreightNeo W03 Light Medium";
+.product-des .produk-des h2{
+    font-family: "FreightNeo W03 Light Italic";
     font-size: 40px;
     padding: 50px 0 20px;   
     letter-spacing: 1px;
-    border: solid;
+    /* border: solid; */
 }
 
 .product-des .produk-des p{
