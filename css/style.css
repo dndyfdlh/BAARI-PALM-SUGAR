@@ -1167,6 +1167,7 @@ footer{
     /* position: fixed; */
     /* z-index: 8000; */
     bottom: 40px;
+    cursor: pointer;
     right: 30px;
     /* border: solid; */
 }
@@ -1190,7 +1191,6 @@ footer{
 
 .custom-dropdown-select i{
     margin-left: 0.5vw;
-    cursor: pointer;
  /* border: solid; */
 }
 
