@@ -101,7 +101,8 @@ li {
     background-position: center;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 31.5vh;
+
 }
 
 .home-why::before{
@@ -115,9 +116,9 @@ li {
     opacity: 0.2;
 }
 
-.home-why-text {
+/* .home-why-text {
     padding-top: 130px;
-}
+} */
 
 .home-why-text h1 {
     font-family: headline;
@@ -199,7 +200,7 @@ li {
     background-position: center;
     align-items: center;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 2%;
     padding: 5%;
     /* margin: 5%; */
 }
@@ -664,7 +665,7 @@ li {
 .sus-cart .cart{
     border: 0.11vw solid var(--first-color);
     margin: 1vw;
-    height: 33vw;
+    height: auto;
     padding: 1%;
     width: 25vw;
     position: relative;
@@ -686,7 +687,7 @@ li {
     font-size: 3vw;
     text-align: left;
     font-style: italic;
-    margin-bottom: 0.6vw;
+    margin-bottom: 1.3vw;
     color: var(--third-color);
 }
 
@@ -708,5 +709,13 @@ li {
 .cart p.des{
     font-family: "FreightNeo W03 Medium";
     font-size: 1.5vw;
+    text-align: left;
+    margin-bottom: 4vw;
+}
+
+.cart p.des-id{
+    font-family: "FreightNeo W03 Medium";
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
     text-align: left;
 }

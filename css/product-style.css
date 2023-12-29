@@ -101,7 +101,8 @@ li {
     background-position: center;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 31vh;
+
 }
 
 .home-product::before{
@@ -118,9 +119,9 @@ li {
     opacity: 0.3;
 }
 
-.home-product-text {
+/* .home-product-text {
     padding-top: 130px;
-}
+} */
 
 .home-product-text h1 {
     font-family: headline;

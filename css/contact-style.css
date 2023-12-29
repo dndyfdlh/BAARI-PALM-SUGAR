@@ -101,12 +101,13 @@ li {
     background-position: center;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 31.5vh;
+
 }
 
-.home-contact-text {
+/* .home-contact-text {
     padding-top: 130px;
-}
+} */
 
 .home-contact-text h1 {
     font-family: headline;
@@ -176,13 +177,13 @@ li {
 }
 
 .contact-add .add:not(:last-child){
-    margin-bottom: 3vw;
+    margin-bottom: 2.5vw;
 }
 
 .contact-add .add h1{
     font-family: 'Noto Sans Tamil', serif;
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 2.1vw;
     /* font-style: italic; */
     color: var(--third-color);
 }
@@ -191,13 +192,13 @@ li {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 1.8vw 0 0 1vw;
+    margin: 1vw 0 0 1vw;
     /* border: solid; */
 }
 
 .add .des i{
     font-size: 2.1vw;
-    margin: 0.3vw 2vw 0 0;
+    margin: 0 2vw 0 0;
 }
 
 .contact-add .add p{
@@ -215,13 +216,40 @@ li {
     justify-content: center;
 }
 
-input,
+.form-row{
+    width: 45vw;
+    height: 100%;
+    /* border: solid; */
+    position:  relative;
+    justify-content: center;
+}
+
+.form-row{
+    width: 45vw;
+    height: 10%;
+    /* border: solid; */
+    position:  relative;
+    justify-content: center;
+}
+input {
+    background-color:var(--modal-bg-color);
+    border: #d8d7d7 solid 0.12vw;
+    padding: 0.9vw 15px;
+    margin: 0.5vw 0;
+    width: 100%;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    font-family: poppins;
+    font-size: 1.3vw;
+}
+
 textarea {
     background-color:var(--modal-bg-color);
     border: #d8d7d7 solid 0.12vw;
     padding: 0.9vw 15px;
     margin: 0.5vw 0;
     width: 100%;
+    height: 18vh;
     font-size: 0.8rem;
     border-radius: 8px;
     font-family: poppins;
